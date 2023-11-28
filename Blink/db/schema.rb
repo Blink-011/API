@@ -10,7 +10,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_11_15_172636) do
+ActiveRecord::Schema[7.0].define(version: 2023_11_24_152658) do
+  create_table "daily_data", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "track_types", force: :cascade do |t|
+    t.string "name"
+    t.string "color"
+    t.integer "object_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["object_id"], name: "index_track_types_on_object_id"
+  end
+
+  create_table "tracks", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.string "password"
@@ -18,4 +39,5 @@ ActiveRecord::Schema[7.0].define(version: 2023_11_15_172636) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "track_types", "objects"
 end
