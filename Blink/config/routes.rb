@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
+  resources :track_items
   resources :daily_data
-  resources :track_types
   resources :tracks
   resources :tracked_items
   resources :users
