@@ -1,6 +1,6 @@
 require "test_helper"
 
-class TrackTypeTest < ActiveSupport::TestCase
+class TrackItemTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
