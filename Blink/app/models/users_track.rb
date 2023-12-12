@@ -1,0 +1,2 @@
+class UsersTrack < ApplicationRecord
+end

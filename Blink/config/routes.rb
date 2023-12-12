@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :users_tracks
   resources :track_items
   resources :daily_data
   resources :tracks
