@@ -35,7 +35,7 @@ class UsersTracksController < ApplicationController
 
   # DELETE /users_tracks/1
   def destroy
-    @users_track.destroy
+    @users_track.destroy!
   end
 
   private

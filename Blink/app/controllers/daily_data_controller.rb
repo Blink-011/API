@@ -35,7 +35,7 @@ class DailyDataController < ApplicationController
 
   # DELETE /daily_data/1
   def destroy
-    @daily_datum.destroy
+    @daily_datum.destroy!
   end
 
   private

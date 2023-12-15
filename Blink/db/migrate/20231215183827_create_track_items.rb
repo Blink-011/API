@@ -1,4 +1,4 @@
-class CreateTrackItems < ActiveRecord::Migration[7.0]
+class CreateTrackItems < ActiveRecord::Migration[7.1]
   def change
     create_table :track_items do |t|
       t.string :name

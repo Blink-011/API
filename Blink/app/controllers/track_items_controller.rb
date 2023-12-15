@@ -35,7 +35,7 @@ class TrackItemsController < ApplicationController
 
   # DELETE /track_items/1
   def destroy
-    @track_item.destroy
+    @track_item.destroy!
   end
 
   private
