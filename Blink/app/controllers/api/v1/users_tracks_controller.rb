@@ -1,4 +1,4 @@
-class UsersTracksController < ApplicationController
+class api::v1::UsersTracksController < ApplicationController
   before_action :set_users_track, only: %i[ show update destroy ]
 
   # GET /users_tracks

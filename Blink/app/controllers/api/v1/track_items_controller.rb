@@ -1,4 +1,4 @@
-class TrackItemsController < ApplicationController
+class api::v1::TrackItemsController < ApplicationController
   before_action :set_track_item, only: %i[ show update destroy ]
 
   # GET /track_items

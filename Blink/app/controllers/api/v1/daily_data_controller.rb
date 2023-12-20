@@ -1,4 +1,4 @@
-class DailyDataController < ApplicationController
+class api::v1::DailyDataController < ApplicationController
   before_action :set_daily_datum, only: %i[ show update destroy ]
 
   # GET /daily_data
